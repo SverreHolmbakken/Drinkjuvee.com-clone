@@ -1,8 +1,8 @@
 .header {
 	position: fixed;
-	flex-direction: row;
 	height: 125px;
 	width: 100vw;
+	background-color: var(--background-color);
 }
 
 .header__marquee {
@@ -39,7 +39,9 @@
 }
 
 .header__logo-image {
-	width: 127px;
+	position: relative;
+	bottom: 10px;
+	width: 150px;
 	margin: 2rem 1rem 2rem 0;
 }
 
@@ -73,11 +75,12 @@
 
 .header__content-right {
 	position: relative;
+	bottom: 15px;
 }
 
 .header__content-right > a,
 .header__content-right > button {
-	padding-right: 2rem;
+	margin-right: 2rem;
 }
 
 .header__shopping-cart {
