@@ -1,4 +1,7 @@
 :root {
+	/* Fonts */
+	--primary-font: 'Roc Grotesk', sans-serif;
+	
 	/* Font weights */
 	--grotesk-weight: 400;
 	--grotesk-medium-weight: 500;

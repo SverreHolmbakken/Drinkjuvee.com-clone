@@ -1,8 +1,7 @@
 .header {
 	position: fixed;
-	display: flex;
 	flex-direction: row;
-	height: 100px;
+	height: 125px;
 	width: 100vw;
 }
 
@@ -16,24 +15,38 @@
 	);
 	width: 100vw;
 	height: 25px;
-	font-family: 'Roc Grotesk';
+	font-family: var(--primary-font);
 	font-weight: var(--grotesk-medium-weight);
 }
 
 .header__content {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	position: relative;
 	top: 25px;
 	align-items: center;
-	font-family: 'Roc Grotesk';
+	font-family: var(--primary-font);
+	margin: 0 2rem;
 }
 
-.header__logo {
+.header__content-left {
+	position: relative;
+}
+
+
+.header__logo:hover {
+	text-decoration: none;
+}
+
+.header__logo-image {
 	width: 127px;
+	margin: 2rem 1rem 2rem 0;
 }
 
 .header__shop-button {
+	position: absolute;
+	top: 30px;
+	justify-content: center;
 	width: 88.22px;
 	height: 39px;
 	font-weight: var(--grotesk-bold-weight);
@@ -54,6 +67,14 @@
 }
 
 .header__link {
-	font-family: 'Roc Grotesk';
+	font-family: var(--primary-font);
 	font-weight: var(--grotesk-medium-weight);
+}
+
+.header__content-right {
+	position: relative;
+}
+
+.header__content-right > a {
+	padding-right: 2rem;
 }
