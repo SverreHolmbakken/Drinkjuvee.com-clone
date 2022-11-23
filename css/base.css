@@ -3,6 +3,7 @@ body {
 }
 
 .main {
+	font-family: var(--primary-font);
 	display: block;
 	font-size: 20px;
 }
