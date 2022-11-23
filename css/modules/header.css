@@ -75,6 +75,12 @@
 	position: relative;
 }
 
-.header__content-right > a {
+.header__content-right > a,
+.header__content-right > button {
 	padding-right: 2rem;
+}
+
+.header__shopping-cart {
+	position: relative;
+	top: 7px;
 }
