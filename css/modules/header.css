@@ -87,3 +87,19 @@
 	position: relative;
 	top: 7px;
 }
+
+.header__shopping-cart-number {
+	position: absolute;
+	height: 24px;
+	left: 15px;
+	top: 0;
+}
+
+.header__shopping-cart-number > p {
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	font-family: var(--primary-font);
+	color: var(--orange);
+	font-weight: var(--grotesk-medium-weight);
+}
