@@ -29,7 +29,7 @@ img {
 button {
 	font: inherit;
 	color: inherit;
-	background: inherit;
-	border: 0;
+	background: transparent;
+	border: transparent	;
 	cursor: pointer;
 }

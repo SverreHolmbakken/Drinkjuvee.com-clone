@@ -26,10 +26,31 @@
 	position: relative;
 	top: 25px;
 	align-items: center;
+	font-family: 'Roc Grotesk';
 }
 
 .header__logo {
 	width: 127px;
+}
+
+.header__shop-button {
+	width: 88.22px;
+	height: 39px;
+	font-weight: var(--grotesk-bold-weight);
+	color: var(--orange);
+	background-color: var(--yellow);
+	border: 2px solid var(--orange);
+	border-radius: 22px;
+	box-shadow: 7px 7px 0px;
+	transition: all 300ms ease-in-out;
+	/* transition: transform ease-in-out 300ms; */
+	/* transition: box-shadow ease-in-out 300ms; */
+}
+
+.header__shop-button:hover {
+	/* transition: ease-in-out 300ms; */
+	box-shadow: none;
+	transform: translate(10px, 10px);
 }
 
 .header__link {

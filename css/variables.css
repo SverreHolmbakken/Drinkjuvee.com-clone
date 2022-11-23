@@ -1,6 +1,18 @@
 :root {
+	/* Font weights */
 	--grotesk-weight: 400;
 	--grotesk-medium-weight: 500;
 	--grotesk-bold-weight: 600;
 	--grotesk-extra-bold-weight: 700;
+
+	/* Colours */
+	--orange: #F95A00;
+	--yellow: #FDF275;
+	--red: #ED2222;
+	--pink: #FD2170;
+	--lime: #C2F470;
+	--background-color: #F5F5ED;
+	--dark-green: #008162;
+	--softer-dark-green: #019767;
+
 }
