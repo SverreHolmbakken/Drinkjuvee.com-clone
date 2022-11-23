@@ -1,0 +1,38 @@
+.header {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	width: 100vw;
+}
+
+.header__marquee {
+	position: absolute;
+	background: linear-gradient(
+		90deg, 
+		rgba(194, 244, 112, 1) 1.59%, 
+		rgba(253, 193, 233, 1) 53.63%, 
+		rgba(253, 242, 117, 1) 101.95%
+	);
+	width: 100vw;
+	height: 25px;
+	font-family: 'Roc Grotesk';
+	font-weight: var(--grotesk-medium-weight);
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	top: 25px;
+	align-items: center;
+}
+
+.header__logo {
+	width: 127px;
+}
+
+.header__link {
+	font-family: 'Roc Grotesk';
+	font-weight: var(--grotesk-medium-weight);
+}
