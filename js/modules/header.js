@@ -11,7 +11,7 @@ export default function Header() {
 	// query selectors
 	const header = document.querySelector('.header');
 	const headerNavigation = document.querySelector('.header__navigation');
-	const headerMenuButton = document.querySelector('.header__menu-button');
+	const headerMenuButton = document.querySelector('.header__navigation-menu');
 
 	// event listeners
 	if (header !== null) {
