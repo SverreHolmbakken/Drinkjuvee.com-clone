@@ -1,11 +1,12 @@
 body {
-	background-color: white;
+	background-color: var(--background-color);
 }
 
 .main {
 	font-family: var(--primary-font);
 	display: block;
 	font-size: 20px;
+	margin: 155px 3rem 50px 3rem;
 }
 
 .header__footer-button {
