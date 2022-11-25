@@ -118,7 +118,7 @@
 	top: -7px;
 	height: 100vh;
 	background: var(--background-color);
-	padding: 4rem 2rem;
+	padding: 4rem 2rem 12rem 2rem;
 }
 
 .header__navigation-text-images {
@@ -136,8 +136,15 @@
 	top: 20px;
 }
 
+.header__navigation-footer {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	bottom: -150px;
+}
+
 .header__navigation-footer-socials-icon {
-	margin-left: 10px;
+	margin-left: 50px;
 }
 
 #kiwi-strawberry {
