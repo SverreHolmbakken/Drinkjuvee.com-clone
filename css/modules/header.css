@@ -38,7 +38,7 @@
 }
 
 
-.header__logo:hover {
+.image-hover:hover {
 	text-decoration: none;
 }
 
@@ -136,6 +136,10 @@
 	top: 20px;
 }
 
+.header__navigation-footer-socials-icon {
+	margin-left: 10px;
+}
+
 #kiwi-strawberry {
 	color: var(--dark-green);
 }
@@ -150,4 +154,10 @@
 
 #variety-pack {
 	color: var(--pink);
+}
+
+#twitter-icon,
+#instagram-icon,
+#tiktok-icon {
+	fill: black;
 }
