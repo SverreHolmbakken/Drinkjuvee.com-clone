@@ -1,0 +1,115 @@
+.footer {
+	font-family: var(--primary-font);
+	background-color: var(--background-color);
+	padding: 3rem;
+}
+/* Top block */
+/* Top right block */
+.footer__top-block {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 7rem;
+}
+
+.footer__shop-list {
+	font-size: 2rem;
+	font-weight: var(--grotesk-medium-weight);
+}
+
+.footer__shop-list > li {
+	margin-bottom: 1rem;
+}
+
+.footer__title {
+	font-size: 1rem;
+	font-weight: var(--grotesk-weight);
+	margin-bottom: 1.5rem;
+}
+/* Top middle block */
+.footer__button {
+	border: 2px solid black;
+	font-weight: var(--grotesk-medium-weight);
+	padding: 1rem 3rem;
+	border-radius: 25px;
+	margin-bottom: 1rem;
+	width: min-content;
+}
+
+.footer__navigation-text-images {
+	height: 30px;
+	width: 33px;
+}
+
+.footer__info-list {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Top right block */
+.footer__newsletter {
+	
+}
+
+.footer__newsletter-text {
+	margin-bottom: 1rem;
+}
+
+.footer__title-newsletter {
+	font-size: 1.7rem;
+	font-weight: var(--grotesk-medium-weight);
+	margin-bottom: 1rem;
+}
+
+.footer__input-field {
+	position: relative;
+	border: 2px solid black;
+	background: white;
+	border-radius: 30px;
+	padding: 1rem;
+}
+
+.footer__input {
+	border: none;
+	background: none;
+}
+
+.footer__input-button {
+	position: absolute;
+	right: 16px;
+}
+
+.footer__newsletter-socials {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer__newsletter-socials > a {
+	margin-left: 1.5rem;
+}
+
+/* Middle block */
+.footer__middle-block {
+	margin-bottom: 3rem;
+}
+
+.footer__legal {
+
+}
+
+.footer__legal > a {
+	font-size: 0.8rem;
+	margin-right: 2rem;
+}
+
+.footer__legal > a:hover {
+	text-decoration: none;
+}
+
+/* Bottom block */
+.footer__bottom-block {
+
+}
+
+.footer__bottom-logo {
+	
+}

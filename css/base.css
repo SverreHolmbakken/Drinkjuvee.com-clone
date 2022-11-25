@@ -8,7 +8,7 @@ body {
 	font-size: 20px;
 }
 
-.footer__button {
+.header__footer-button {
 	border: 2px solid black;
 	font-weight: var(--grotesk-medium-weight);
 	padding: 1rem 3rem;
