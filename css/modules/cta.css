@@ -1,0 +1,32 @@
+.cta {
+	display: flex;
+	/* flex-wrap: nowrap; */
+	padding: 50px 0;
+}
+
+.cta__left-side {
+	display: flex;
+	/* width: 70%; */
+	flex-direction: column;
+	gap: 40px;
+	z-index: 15;
+}
+
+.cta__title {
+	font-size: 4rem;
+	font-weight: var(--grotesk-medium-weight);
+}
+
+.cta__subtitle {
+	font-size: 1.75rem;
+}
+
+.cta__button {
+
+}
+
+.cta__right-side {
+	position: relative;
+	z-index: 10;
+	justify-content: flex-end;
+}
