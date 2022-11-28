@@ -7,7 +7,6 @@ body {
 	display: block;
 	font-size: 20px;
 	/* top-margin used to compensate the height of the header */
-	margin: 155px 3rem 50px 3rem;
 }
 
 /* Buttons used on both header navigation and the footer */

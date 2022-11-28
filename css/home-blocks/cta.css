@@ -1,7 +1,7 @@
 .cta {
 	display: flex;
 	/* flex-wrap: nowrap; */
-	padding: 50px 0;
+	padding: 205px 3rem 50px 3rem;
 }
 
 .cta__left-side {
