@@ -38,9 +38,9 @@ body {
 /* Global */
 .shop-button {
 	width: 18rem;
-	height: 3.125rem;
+	height: 3.4375rem;
 	background: var(--orange);
-	border-radius: 25px;
+	border-radius: 67px;
 	color: white;
 	font-weight: var(--grotesk-medium-weight);
 }
