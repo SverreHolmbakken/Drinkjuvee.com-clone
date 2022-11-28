@@ -31,3 +31,17 @@ body {
 .account:hover {
 	background: var(--light-pink);
 }
+
+
+/* CTA block */
+
+
+/* Global */
+.shop-button {
+	width: 18rem;
+	height: 3.125rem;
+	background: var(--orange);
+	border-radius: 25px;
+	color: white;
+	font-weight: var(--grotesk-medium-weight);
+}

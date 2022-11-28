@@ -5,5 +5,11 @@
 
 @import './modules/header.css';
 @import './modules/footer.css';
-@import './modules/cta.css';
 @import './modules/account.css';
+
+/* Blocks on the home page */
+@import './home-blocks/cta.css';
+@import './home-blocks/shop-slideshow.css';
+@import './home-blocks/info.css';
+@import './home-blocks/marquee.css';
+@import './home-blocks/feedback-carousel.css';

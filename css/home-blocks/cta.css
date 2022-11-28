@@ -21,8 +21,10 @@
 	font-size: 1.75rem;
 }
 
-.cta__button {
-
+#cta-button:hover {
+	border: black 2px solid;
+	color: black;
+	background: var(--yellow);
 }
 
 .cta__right-side {
