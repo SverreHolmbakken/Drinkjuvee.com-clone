@@ -1,0 +1,90 @@
+.shop-slideshow {
+	display: flex;
+	padding: 50px 3rem 50px 3rem;
+	background: linear-gradient(180deg, #F5F5ED 0%, #C2F470 54.17%, #F5F5ED 100%);
+}
+/* Left side of the block */
+.shop__left-side {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.shop__title {
+	font-size: 3.75rem;
+	font-weight: var(--grotesk-medium-weight);
+}
+
+.shop__subtitle-info {
+	font-size: 1.5rem;
+	font-weight: var(--grotesk-medium-weight);
+}
+
+.shop__subtitle-description {
+	font-size: 2rem;
+	font-weight: var(--grotesk-weight);
+}
+
+.shop__buttons {
+	display: flex;
+	gap: 1rem;
+}
+
+.shop__item-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 124px;
+	width: 120px;
+	border-radius: 30px;
+	font-weight: var(--grotesk-medium-weight);
+	color: white;
+	padding: 16px;
+}
+
+.shop__item-button > img {
+	height: 67.3px;
+	width: 70px;
+}
+
+.shop__item-button > span {
+	font-size: 0.75rem;
+}
+
+.kiwi-color {
+	color: var(--dark-green);
+}
+
+.kiwi-strawberry {
+	background-color: var(--softer-dark-green);
+	border: 2px solid var(--dark-green);
+}
+
+.not-selected__kiwi-strawberry {
+	border: 2px solid var(--dark-green);
+	color: var(--dark-green);
+}
+
+.tropical-crush:hover {
+	background-color: var(--darker-orange);
+	border: 2px solid var(--orange);
+	color: white;
+}
+
+.watermelon-lime:hover {
+	background-color: var(--lighter-red);
+	border: 2px solid var(--red);
+	color: white;
+}
+
+.variety-pack:hover {
+	background-color: var(--peach);
+	border: 2px solid var(--orange);
+	color: white;
+}
+
+/* Right side of the block */
+.shop__right-side {
+
+}
