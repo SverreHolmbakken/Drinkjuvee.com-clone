@@ -25,6 +25,7 @@
 	font-weight: var(--grotesk-weight);
 }
 
+/* Shop buttons */
 .shop__buttons {
 	display: flex;
 	gap: 1rem;
@@ -82,6 +83,35 @@
 	background-color: var(--peach);
 	border: 2px solid var(--orange);
 	color: white;
+}
+
+/* Shop last action */
+.shop__last-action {
+	display: flex;
+	gap: 1rem;
+}
+
+.shop__input {
+	display: flex;
+	width: 136px;
+	height: 55px;
+	gap: 1rem;
+	border: 2px solid black;
+	border-radius: 67px;
+	padding: 0 1rem;
+}
+
+.shop__add-to-cart-sign {
+	font-size: 2.5rem;
+}
+
+.shop__add-to-cart-number {
+	width: 100%;
+	font-family: var(--primary-font);
+	font-size: 1.5rem;
+	text-align: center;
+	background: none;
+	border: none;
 }
 
 /* Right side of the block */
