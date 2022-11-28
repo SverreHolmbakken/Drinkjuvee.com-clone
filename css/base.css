@@ -6,9 +6,11 @@ body {
 	font-family: var(--primary-font);
 	display: block;
 	font-size: 20px;
+	/* top-margin used to compensate the height of the header */
 	margin: 155px 3rem 50px 3rem;
 }
 
+/* Buttons used on both header navigation and the footer */
 .header__footer-button {
 	border: 2px solid black;
 	font-weight: var(--grotesk-medium-weight);
@@ -17,6 +19,7 @@ body {
 	margin-right: 1rem;
 }
 
+/* Styling for buttons in header navigation and footer */
 .our-story:hover {
 	background: var(--lime);
 }
