@@ -5,11 +5,13 @@
 
 @import './modules/header.css';
 @import './modules/footer.css';
-@import './modules/account.css';
+@import './modules/pages/account.css';
+@import './modules/pages/cart.css';
 
 /* Blocks on the home page */
-@import './home-blocks/cta.css';
-@import './home-blocks/shop-slideshow.css';
-@import './home-blocks/info.css';
-@import './home-blocks/marquee.css';
-@import './home-blocks/feedback-carousel.css';
+@import './modules/home-blocks/cta.css';
+@import './modules/home-blocks/shop-slideshow.css';
+@import './modules/home-blocks/info.css';
+@import './modules/home-blocks/marquee.css';
+@import './modules/home-blocks/feedback-carousel.css';
+
