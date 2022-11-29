@@ -1,5 +1,5 @@
 import Header from "./modules/header.js";
-// import Marquee from "./modules/marquee.js";
+import Cart from "./modules/cart.js";
 
 Header();
-// Marquee();
+Cart();
