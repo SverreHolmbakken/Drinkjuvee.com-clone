@@ -1,6 +1,6 @@
 .shop-slideshow {
 	display: flex;
-	padding: 50px 3rem 50px 3rem;
+	padding: 50px 8rem 50px 8rem;
 	background: linear-gradient(180deg, #F5F5ED 0%, #C2F470 54.17%, #F5F5ED 100%);
 }
 /* Left side of the block */
@@ -116,5 +116,11 @@
 
 /* Right side of the block */
 .shop__right-side {
+	width: 50%;
+	height: 20%;
+}
 
+.shop__right-side-image {
+	height: 100%;
+	width: 100%;
 }
