@@ -37,9 +37,6 @@ export default function ShopSlideshow() {
 	additionButton.forEach(button => {
 		button.addEventListener('click', handleIncreaseNumber)
 	})
-	
-	// subtractButton.addEventListener('click', handleDecreaseNumber);
-	// additionButton.addEventListener('click', handleIncreaseNumber);
 
 	// Event handlers
 	function handleButtonSwitchSlide(event) {
