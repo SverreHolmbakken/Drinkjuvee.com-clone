@@ -83,13 +83,16 @@
 	font-size: 0.75rem;
 }
 
+/* Kiwi states */
 .kiwi-color {
 	color: var(--dark-green);
 }
 
-.kiwi-strawberry {
+.selected-kiwi,
+.kiwi-strawberry:hover {
 	background-color: var(--softer-dark-green);
 	border: 2px solid var(--dark-green);
+	color: white;
 }
 
 .not-selected__kiwi-strawberry {
@@ -97,28 +100,56 @@
 	color: var(--dark-green);
 }
 
-.tropical-crush {
-	background-color: var(--darker-orange);
-	border: 2px solid var(--orange);
-	color: white;
+
+/* Tropical states */
+.tropical-color {
+	color: var(--orange);
 }
 
+.selected-tropical,
 .tropical-crush:hover {
 	background-color: var(--darker-orange);
 	border: 2px solid var(--orange);
 	color: white;
 }
 
+.not-selected__tropical {
+	border: 2px solid var(--orange);
+	color: var(--orange);
+}
+
+/* Watermelon states */
+.watermelon-color {
+	color: var(--red);
+}
+
+.selected-watermelon,
 .watermelon-lime:hover {
 	background-color: var(--lighter-red);
 	border: 2px solid var(--red);
 	color: white;
 }
 
+.not-selected__watermelon {
+	border: 2px solid var(--red);
+	color: var(--red);
+}
+
+/* Variety states */
+.variety-color {
+	color: var(--orange);
+}
+
+.selected-variety,
 .variety-pack:hover {
 	background-color: var(--peach);
 	border: 2px solid var(--orange);
 	color: white;
+}
+
+.not-selected__variety {
+	border: 2px solid var(--orange);
+	color: var(--orange);
 }
 
 /* Shop last action */
