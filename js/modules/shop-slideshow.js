@@ -48,7 +48,7 @@ export default function ShopSlideshow() {
 			inputNumber[currentIndex].innerHTML = count;
 	}
 	function handleDecreaseNumber(event) {
-		if (count[currentIndex].count >= 1) {
+		if (count[currentIndex].count > 1) {
 			count[currentIndex].count -=1
 			inputNumber[currentIndex].innerHTML = count[currentIndex].count;
 		}
