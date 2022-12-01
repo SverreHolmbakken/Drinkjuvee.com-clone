@@ -28,7 +28,6 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	top: 25px;
 	align-items: center;
 	/* font-family: var(--primary-font); */
 	margin: 0 3rem;
