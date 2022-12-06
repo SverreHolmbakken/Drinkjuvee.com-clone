@@ -11,7 +11,7 @@
 /* Blocks on the home page */
 @import './modules/home-blocks/cta.css';
 @import './modules/home-blocks/shop-slideshow.css';
-@import './modules/home-blocks/info.css';
-@import './modules/home-blocks/marquee.css';
+@import './modules/home-blocks/info-block.css';
+@import './modules/home-blocks/marquee-block.css';
 @import './modules/home-blocks/feedback-carousel.css';
 
