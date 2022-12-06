@@ -1,0 +1,92 @@
+.marquee-block {
+	
+}
+
+/* Top part of the block */
+.marquee-descriptions {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 4rem 8rem;
+}
+
+.marquee-title {
+	font-size: 3.75rem;
+	font-weight: 500;
+}
+
+.marquee-subtitle {
+	font-size: 1.875rem;
+}
+
+/* Scrolling text elements part */
+.marquees {
+	padding: 4rem 0;
+	overflow: hidden;
+}
+
+.marquee__left-to-right {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	transform: translateX(100%);
+	animation: scroll-left 30s linear infinite;
+}
+
+.marquee__right-to-left {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	transform: translateX(-100%);
+	animation: scroll-right 30s linear infinite;
+}
+
+/* Styling on the different scroller elements */
+.marquee__keyword {
+	font-size: 9.375rem;
+	font-weight: 500;
+}
+
+.orange-text {
+	color: var(--orange);
+}
+
+.red-text {
+	color: var(--red);
+}
+
+.green-text {
+	color: var(--dark-green);
+}
+
+.marquee__text-box {
+	border: 2px solid black;
+	background: white;
+	border-radius: 25px;
+	padding: 1rem 2rem;
+	min-width: 250px;
+	text-align: center;
+}
+
+.yellow-shadow {
+	box-shadow: 10px 10px var(--yellow);
+}
+
+.pink-shadow {
+	box-shadow: 10px 10px var(--light-pink);
+}
+
+.green-shadow {
+	box-shadow: 10px 10px var(--lime);
+}
+
+.marquee__left-to-right img,
+.marquee__right-to-left img {
+	max-width: 200px;
+}
+
+.flex {
+	display: flex;
+}
