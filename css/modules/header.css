@@ -9,18 +9,41 @@
 }
 
 /* Scroller on top */
-.header__marquee {
-	position: absolute;
+
+/* Recipe from https://htmleditor.w3schools.in/?filename=html_css_scrolling_text_using_css */
+.marquee {
+	overflow: hidden;
+	position: relative;
+	height: 21px; /* 21px */
 	background: linear-gradient(
 		90deg, 
 		rgba(194, 244, 112, 1) 1.59%, 
 		rgba(253, 193, 233, 1) 53.63%, 
 		rgba(253, 242, 117, 1) 101.95%
 	);
-	width: 100vw;
-	height: 25px;
-	/* font-family: var(--primary-font); */
 	font-weight: var(--grotesk-medium-weight);
+}
+
+.marquee a {
+	position: absolute;
+	white-space: nowrap;
+	width: 100%;
+	height: 100%;
+	transform: translateX(100%);
+	animation: scroll-left 60s linear infinite;
+}
+
+.marquee a:hover {
+	text-decoration: none;
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 /*  */
