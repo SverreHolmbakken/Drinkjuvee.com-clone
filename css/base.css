@@ -45,3 +45,24 @@ body {
 	color: white;
 	font-weight: var(--grotesk-medium-weight);
 }
+
+
+/* Animations */
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes scroll-right {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
