@@ -5,6 +5,7 @@
 
 @import './modules/header.css';
 @import './modules/footer.css';
+@import './modules/marquee.css';
 @import './modules/pages/account.css';
 @import './modules/pages/cart.css';
 
