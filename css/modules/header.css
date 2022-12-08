@@ -170,4 +170,17 @@
 	.header__link {
 		display: none;
 	}
+
+	.header__navigation-menu {
+		font-size: 30px;
+	}
+
+	.header__navigation-menu > li {
+		margin-bottom: 25px;
+	}
+
+	.header__navigation-text-images {
+		width: 10%;
+		height: 10%;
+	}
 }
