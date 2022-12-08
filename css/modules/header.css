@@ -183,4 +183,8 @@
 		width: 10%;
 		height: 10%;
 	}
+
+	.header__shop-button {
+		display: none;
+	}
 }

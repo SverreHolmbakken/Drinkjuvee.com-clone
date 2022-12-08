@@ -210,9 +210,10 @@
 		grid-template-columns: repeat(2, 120px);
 	}
 
-	/* .shop__right-side-image {
-		position: relative;
+	.shop__right-side-image {
+		/* position: relative;
 		right: 75px;
-		width: 150%;
-	} */
+		width: 150%; */
+		display: none;
+	}
 }
