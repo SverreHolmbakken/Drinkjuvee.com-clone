@@ -79,14 +79,14 @@
 	top: 7px;
 }
 
-.header__shopping-cart-number {
+.header__shopping-cart-number-container {
 	position: absolute;
 	height: 24px;
 	left: 15px;
 	top: 0;
 }
 
-.header__shopping-cart-number > p {
+.header__shopping-cart-number {
 	position: absolute;
 	top: 3px;
 	left: 4px;
