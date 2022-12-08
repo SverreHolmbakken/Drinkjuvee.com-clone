@@ -1,125 +1,144 @@
 export default function Cart() {
-	let items = getItemsLocally();
+	let currentCartItems = GetItemsFromLocal();
 
-	const cartAddInput = document.querySelector('.cart__add-input');
-	const cartAddButton = document.querySelector('.cart__add-button');
-	const cartItemsContainer = document.querySelector('.cart__items');
-
-	cartAddButton.addEventListener('click', handleCartAddButtonClick);
-
-	
-
-		
-
-	function handleCartAddButtonClick(event) {
-		addNewItem();
-		renderHTML();
-	}
-
-	function handleItemDeleteButtonClick(event) {
-		const item = event.currentTarget.parentElement.parentElement;
-
-		deleteItem(item.dataset.index);
-		renderHTML();
-	}
-
-	function handleItemDoneButtonClick(event) {
-		const item = event.currentTarget.parentElement.parentElement;
-
-		markItemDone(item.dataset.index);
-		renderHTML();
-	}
-
-	function addNewItem() {
-		const currentInput = cartAddInput.value;
-
-		if (currentInput !== '') {
-			items.push({
-				text: currentInput,
-				done: false
-			});
+	// Array of items
+	const shopItems = [
+		{
+			name: 'Kiwi Strawberry',
+			image: 'assets/images/cart/Juvee_Tray_Mockup_Kiwi_2048x.webp',
+			description: '12 pack',
+			price: 36,
+		},
+		{
+			name: 'Tropical Crush',
+			image: 'assets/images/cart/Juvee_Tray_Mockup_Tropical_2000x.webp',
+			description: '12 pack',
+			price: 36,
+		},
+		{
+			name: 'Watermelon Lime',
+			image: 'assets/images/cart/Juvee_Tray_Mockup_Watermelon_2000x.webp',
+			description: '12 pack',
+			price: 36,
+		},
+		{
+			name: 'Variety Pack',
+			image: 'assets/images/cart/juvee_variety_pack_2000x.webp',
+			description: '12 pack',
+			price: 36,
 		}
+	]
 
-		storeItemLocally();
+	let cartObject = {};
+
+	// Query selectors
+	const addToCartButton = document.querySelectorAll('.add-to-cart-button');
+	const itemsInCart = document.querySelector('.header__shopping-cart-number');
+	const checkoutArea = document.querySelector('.cart__items');
+	const checkoutTotal = document.querySelector('.cart__summary-subtotal-price');
+	const checkoutButton = document.querySelector('.cart__summary-check-out-button');
+	const clearCartButton = document.querySelector('.cart__summary-clear-cart-button');
+
+	// Event Listeners
+
+	/**
+	 * Having problems, getting errors that 'addToCartButton.addEventListener' isn't a function.
+	 * 
+	 * @todo Find a solution to this problem.
+	 */
+	if (addToCartButton) {
+		addToCartButton.addEventListener('click', handleAddToCartButton);
+	}
+	
+	if (checkoutButton) {
+		checkoutButton.addEventListener('click', handleClearCartAndGetOutOfHere);
+	}
+	
+	if (clearCartButton) {
+		clearCartButton.addEventListener('click', handleClearCartButton);
 	}
 
-	function deleteItem(index) {
-		items.splice(index, 1);
-
-		storeItemLocally();
+	// Event Handlers
+	function handleAddToCartButton() {
+		createCartObject();
+		const itemInCart = verifyItemInCart();
+		if (itemInCart) {
+			changeItemQuantityInCart();
+		} else {
+			addItemToCart();
+		}
+		renderHTML();
+	}
+	
+	function handleClearCartButton() {
+		clearLocalStorage();
 	}
 
-	function markItemDone(index) {
-		items[index].done = !items[index].done;
-
-		storeItemLocally();
+	function handleClearCartAndGetOutOfHere()	{
+		clearLocalStorage();
+		getOutOfHere();
 	}
 
-	function storeItemLocally() {
-		const key = 'cart-list';
-		const value = JSON.stringify(items);
-
-		window.localStorage.setItem(key, value);
+	//Create object from /shop-item.js file
+	function createCartObject() {
+		cartObject = {
+			itemName: shopItems.name,
+			itemImage: shopItems.image,
+			itemDescription: shopItems.description,
+			itemPrice: shopItems.price,
+			itemQuantity: 1,
+		};
+		console.log(cartObject)
 	}
 
+	//Calculates total value of all items
+	function calculateCartSum() {
+		const cartItems = currentCartItems;
 
-	function getItemsLocally() {
-		const key = 'cart-list';
-		const itemAsAString = window.localStorage.getItem(key);
+		return cartItems.reduce((total, currentCartItem) => {
+			return total + (currentCartItem.itemPrice * currentCartItem.itemQuantity);
+		}, 0);
+	}
 
-		if (itemAsAString) {
-			return JSON.parse(itemAsAString);
+	// Changes quantity of items in cart
+	// function changeItemQuantityInCart() {
+	// 	let indexOfExistingItem = currentCartItems.findIndex(item => {
+	// 		return item.itemName === cartObject.itemName;
+	// 	})
+	// 	currentCartItems[indexOfExistingItem].itemQuantity += 1;
+	// }
+	
+	// Adds item to cart
+	function addItemToCart() {
+		currentCartItems.push(cartObject);
+	}
+	
+	// Local storage - saves
+	function saveToLocalStorage() {
+		localStorage.setItem('cart', JSON.stringify(currentCartItems));
+	}
+	
+	// Local storage - fetch
+	function GetItemsFromLocal() {
+		if (JSON.parse(localStorage.getItem('cart'))) {
+			return JSON.parse(localStorage.getItem('cart'));
 		} else {
 			return [];
 		}
 	}
+
+	// Empty local storage
+	function clearLocalStorage() {
+		localStorage.clear();
+	}
+
+	function getOutOfHere() {
+		window.location.href = "/";
+	}
 	
-	function returnItemDOMElement(item,index) {
-		const itemElement = document.createElement('div');
-		const itemElementText = document.createElement('div');
-		const itemElementButtons = document.createElement('div');
-		const itemElementDeleteButton = document.createElement('button');
-		const itemElementDoneButton = document.createElement('button');
-		const itemElementBetweenDeleteDone = document.createElement('div');
-		itemElementBetweenDeleteDone.classList.add('cart__item-buttons-space-between');
-
-		itemElement.className = 'cart__item';
-		itemElement.dataset.index = index;
-
-		itemElementText.innerText = item.text;
-		itemElementText.className = 'cart__item-text';
-		
-		if(item.done === true) {
-			itemElement.classList.add('cart__item--done');
-		}
-
-		itemElementDeleteButton.innerText = 'Delete';
-		itemElementBetweenDeleteDone.innerText = '|'
-		itemElementDoneButton.innerText = item.done === true ? 'Undo' : 'Done';
-
-		itemElementButtons.className = 'cart__item-buttons';
-
-		itemElementDeleteButton.addEventListener('click', handleItemDeleteButtonClick);
-		itemElementDoneButton.addEventListener('click', handleItemDoneButtonClick);
-
-		itemElementButtons.appendChild(itemElementDeleteButton);
-		itemElementButtons.appendChild(itemElementBetweenDeleteDone);
-		itemElementButtons.appendChild(itemElementDoneButton);
-
-		itemElement.appendChild(itemElementText);
-		itemElement.appendChild(itemElementButtons);
-
-		return itemElement;
+	// Renders
+	function renderCartSum() {
+		const cartSum = calculateCartSum();
+		checkoutTotal.innerText = '$' + cartSum;
 	}
-
-	function renderHTML() {
-		cartItemsContainer.innerHTML = '';
-
-		items.forEach((item, index) => {
-			const itemElement = returnItemDOMElement(item, index);
-			cartItemsContainer.appendChild(itemElement);
-		});
-	}
-
-	renderHTML();
 }
