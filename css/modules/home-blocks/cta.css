@@ -36,7 +36,8 @@
 }
 
 @media screen and (max-width: 1120px) {
-	.cta__left-side {
+	.cta {
+		padding: 170px 1rem 50px;
 	}
 
 	.cta__title {
