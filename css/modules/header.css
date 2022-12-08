@@ -155,3 +155,19 @@
 #tiktok-icon {
 	fill: black;
 }
+
+/* Media query */
+
+@media screen and (max-width: 800px) {
+	.header {
+		width: 100%;
+	}
+
+	.header__content {
+		margin: 0 1rem;
+	}
+
+	.header__link {
+		display: none;
+	}
+}

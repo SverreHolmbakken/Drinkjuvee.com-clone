@@ -37,9 +37,6 @@ body {
 }
 
 
-/* CTA block */
-
-
 /* Global */
 .shop-button {
 	width: 18rem;
@@ -48,6 +45,17 @@ body {
 	border-radius: 67px;
 	color: white;
 	font-weight: var(--grotesk-medium-weight);
+}
+
+/* Media queries */
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 15px;
+	}
+
+	.shop-button {
+		width: 70%;
+	}
 }
 
 

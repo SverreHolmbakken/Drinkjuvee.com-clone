@@ -34,3 +34,16 @@
 	z-index: 10;
 	justify-content: flex-end;
 }
+
+@media screen and (max-width: 1120px) {
+	.cta__left-side {
+	}
+
+	.cta__title {
+		font-size: 30px;
+	}
+	
+	.cta__right-side {
+		display: none;
+	}
+}

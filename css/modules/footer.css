@@ -105,11 +105,10 @@
 	text-decoration: none;
 }
 
-/* Bottom block */
-.footer__bottom-block {
 
-}
+@media screen and (max-width: 425px) {
+	.footer__top-block {
+		display: block;
 
-.footer__bottom-logo {
-	
+	}	
 }

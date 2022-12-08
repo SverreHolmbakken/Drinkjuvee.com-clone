@@ -192,3 +192,23 @@
 	height: 100%;
 	object-fit: contain;
 }
+
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+	.shop__slide--active {
+		padding: 0 2rem;
+	}
+	
+	.shop__buttons {
+		display: grid;
+		grid-template-columns: repeat(2, 120px);
+	}
+
+	.shop__right-side-image {
+		position: relative;
+		right: 75px;
+		width: 150%;
+	}
+}
