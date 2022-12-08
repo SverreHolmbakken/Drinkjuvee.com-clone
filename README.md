@@ -2,7 +2,7 @@
 
 My main project for the exam autumn 2022.
 
-This project I made a clone of the website ![drinkjuvee.com](https://drinkjuvee.com).
+This project I made a clone of the website [drinkjuvee.com](https://drinkjuvee.com).
 
 Some of the javascript functions don't work at the moment.
 
