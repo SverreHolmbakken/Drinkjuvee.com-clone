@@ -27,8 +27,12 @@
 	text-decoration: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 800px) {
 	.marquee {
 		width: 100%;
-	}	
+	}
+
+	.marquee a {
+		animation: scroll-left 15s linear infinite;
+	}
 }

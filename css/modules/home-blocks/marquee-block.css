@@ -90,3 +90,29 @@
 .flex {
 	display: flex;
 }
+
+@media screen and (max-width: 800px) {
+	.marquee__left-to-right {
+		gap: 10px;
+		animation: scroll-left 10s linear infinite;
+	}
+	
+	.marquee__right-to-left {
+		gap: 10px;
+		animation: scroll-right 10s linear infinite;
+	}
+
+	.marquee__keyword {
+		font-size: 6rem;
+	}
+
+	.marquee__text-box {
+		font-size: 15px;
+	}
+
+	.marquee__left-to-right > img,
+	.marquee__right-to-left > img {
+		max-width: 100px;
+	}
+	
+}
