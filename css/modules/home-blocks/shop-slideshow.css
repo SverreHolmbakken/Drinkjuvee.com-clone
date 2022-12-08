@@ -200,15 +200,19 @@
 	.shop__slide--active {
 		padding: 0 2rem;
 	}
+
+	.shop__title {
+		font-size: 3rem;
+	}
 	
 	.shop__buttons {
 		display: grid;
 		grid-template-columns: repeat(2, 120px);
 	}
 
-	.shop__right-side-image {
+	/* .shop__right-side-image {
 		position: relative;
 		right: 75px;
 		width: 150%;
-	}
+	} */
 }
