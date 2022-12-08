@@ -1,7 +1,7 @@
 export default function ShopSlideshow() {
 	let currentIndex = 0;
 	let index
-	let count = [
+	let slideshowCounter = [
 		{
 			count: 1
 		},
@@ -24,6 +24,7 @@ export default function ShopSlideshow() {
 	const inputNumber = document.querySelectorAll('.shop__add-to-cart-number');
 	const subtractButton = document.querySelectorAll('.shop__subtract');
 	const additionButton = document.querySelectorAll('.shop__add');
+	const addToCartButton = document.querySelectorAll('.add-to-cart-button')
 
 	// Event listeners
 	productButtons.forEach(button => {
@@ -38,36 +39,43 @@ export default function ShopSlideshow() {
 		button.addEventListener('click', handleIncreaseNumber)
 	})
 
+	addToCartButton.forEach(button => {
+		button.addEventListener('click', handleAddToCart)
+	})
+
 	// Event handlers
 	function handleButtonSwitchSlide(event) {
 		currentIndex = event.currentTarget.dataset.index
-		updateSlideshowHTML()
+		RenderHTML()
 	}
-		if (count > 1) {
+		if (slideshowCounter > 1) {
 			count--;
 			inputNumber[currentIndex].innerHTML = count;
 	}
+	
 	function handleDecreaseNumber(event) {
-		if (count[currentIndex].count > 1) {
-			count[currentIndex].count -=1
-			inputNumber[currentIndex].innerHTML = count[currentIndex].count;
+		if (slideshowCounter[currentIndex].count > 1) {
+			slideshowCounter[currentIndex].count -=1
+			inputNumber[currentIndex].innerHTML = slideshowCounter[currentIndex].count;
 		}
 	}
 
 	function handleIncreaseNumber(event) {
-		if (count[currentIndex].count >= 1) {
-			count[currentIndex].count +=1
-			inputNumber[currentIndex].innerHTML = count[currentIndex].count;
+		if (slideshowCounter[currentIndex].count >= 1) {
+			slideshowCounter[currentIndex].count +=1
+			inputNumber[currentIndex].innerHTML = slideshowCounter[currentIndex].count;
 		}
 	}
-	
+
+	function handleAddToCart(event) {
+		
+	}
 
 	// Methods
-	function updateSlideshowHTML() {
+	function RenderHTML() {
 		for (const slide of slideshowSlides) {
 			slide.classList.remove('shop__slide--active');
 		}
 		slideshowSlides[currentIndex].classList.add('shop__slide--active')
 	}
-
 }
